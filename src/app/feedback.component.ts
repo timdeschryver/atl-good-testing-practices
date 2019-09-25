@@ -7,7 +7,7 @@ import { Validators, FormBuilder } from "@angular/forms";
   styleUrls: ["./feedback.component.css"]
 })
 export class FeedbackComponent {
-  @Input() shirtSizes: string[] = ["Small", "Medium", "Large"];
+  @Input() shirtSizes: string[];
   @Output() submitForm = new EventEmitter<any>();
 
   form = this.formBuilder.group({
